@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Job Information</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/bootstrap-maxlength.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+
+<script src="js/validator.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/blog-home.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="page-header">
+       <h1>Job Information</h1>
+    </div>
+
+
+   <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Job Title &&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+          <form data-toggle="validator" class="form-horizontal" role="form">
+
+   <div class="form-group ">
+    <label for="inputEmail3" class="col-sm-2 control-label">Job Title<span style="color: #CC0000"> *</span></label>
+    <div class="col-sm-10">
+      <input type="text" maxlength="50" name="alloptions" id="alloptions" class="form-control" id="" placeholder="Title" required>
+    </div>
+     <script>
+                        $(document).ready(function(){
+                        $('input#alloptions').maxlength({
+                        alwaysShow: true,
+                        threshold: 10,
+                        warningClass: "label label-success",
+                        limitReachedClass: "label label-danger",
+                  //      placement: 'top-left',
+                        separator: ' of ',
+                        preText: 'You have ',
+                        postText: ' chars remaining.'
+                        });
+                        });
+                </script>
+  </div>
+
+  <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Job location &&&&&&&&&&&&&&&&&&&&&&&& -->
+
+
+
+   <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Job location<span style="color: #CC0000"> *</span></label>
+    <div class="col-sm-10">
+      <select class="form-control" required>
+        <option>Jordan</option>
+        <option>Turky</option>
+        <option>Lebanon</option>
+        <option>Kuwait</option>
+        <option>USA</option>
+     </select>
+    </div>
+  </div>
+
+
+  <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&& E-mail &&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Email<span style="color: #CC0000"> *</span></label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder=" example@bayt.net "data-error="This email address is invalid (e.g. mail@bayt.net) " required >
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+
+   <!--&&&&&&&&&&&&&&&&&&&&&&&&&&& website &&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Website<span style="color: #CC0000"> *</span></label>
+    <div class="col-sm-10">
+      <input type="url" class="form-control" id="inputEmail3" placeholder="http://www.example.com" data-error="This url is invalid (e.g. http://www.example.com)" required>
+      <div class="help-block with-errors"></div>
+    </div>
+  </div>
+
+
+   <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Company Industry &&&&&&&&&&&&&&&&&&&&&&&& -->
+
+
+
+   <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Company Industry<span style="color: #CC0000"> *</span></label>
+    <div class="col-sm-10">
+      <select class="form-control" required>
+        <option>Computer/Software</option>
+        <option>Other</option>
+        <option>Other</option>
+        <option>Other</option>
+        <option>Other</option>
+     </select>
+    </div>
+  </div>
+    <br>
+    <br>
+  <!--&&&&&&&&&&&&&&&&&&&&&&&&&&& Job Description &&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Job Description<span style="color: #CC0000"> *</span></label>
+    <div class="col-sm-10">
+    <textarea type="text"   class="form-control" rows="7" required></textarea>
+
+    </div>
+  </div>
+
+
+   <!--&&&&&&&&&&&&&&&&&&&&&&&&&&& Desired Skills &&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Desired Skills<span style="color: #CC0000"> *</span></label>
+    <div class="col-sm-10">
+    <textarea type="text" maxlength="4000" name="textarea" id="textarea" class="form-control" rows="7" required></textarea>
+
+    </div>
+    <script>
+                        $(document).ready(function(){
+                        $('textarea#textarea').maxlength({
+                        alwaysShow: true,
+                        threshold: 10,
+                        warningClass: "label label-success",
+                        limitReachedClass: "label label-danger",
+                   //    placement:"bottom-left" ,
+                        separator: ' of ',
+                        preText: 'You have ',
+                        postText: ' chars remaining.'
+                        });
+                        });
+                </script>
+  </div>
+
+
+     <br>
+
+   <!--&&&&&&&&&&&&&&&&&&&&&&&&&& submit &&&&&&&&&&&&&&&&&&&&&&&&&&&&& -->
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button style="float: right" type="button" class="btn btn-warning">Submit</button>
+    </div>
+  </div>
+</form>
+
+          </div>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

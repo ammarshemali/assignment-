@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tabs</title>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="css/bootstrap-tabs-x.css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap-tabs-x.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+
+<div class="page-header">
+    <h2 class="text-info">Tabs</h2>
+</div>
+<div class="row">
+
+      <!--****************************************** Tabs Demo******************************************************* -->
+
+    <div class="col-md-6">
+        <legend class="text-warning">Simple tabs demo</legend>
+        <div class="tabs-x tabs-above">
+            <ul id="myTab-kv-1" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#one" role="tab" data-toggle="tab"><i></i>One</a></li>
+                <li><a href="#two" role="tab-kv" data-toggle="tab"><i></i>
+                    Two</a></li>
+                <li><a href="#three" role="tab" data-toggle="tab"><i></i>Three</a></li>
+            </ul>
+            <div id="myTabContent-kv-1" class="tab-content">
+                <div class="tab-pane fade in active" id="one">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                        retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                        Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure
+                        terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan
+                        american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div class="tab-pane fade" id="two">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                        Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four
+                        loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk
+                        aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore
+                        aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente
+                        labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard
+                        ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher
+                        vero sint qui sapiente accusamus tattooed echo park.</p>
+                </div>
+                <div class="tab-pane fade" id="three">
+                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                    sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag
+                    gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie
+                    helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg
+                    banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog.
+                    Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork
+                    sustainable tofu synth chambray yr.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- /tabs-above -->
+    </div>
+    <!-- /col-md-6 -->
+
+
+    <!--****************************************** Nested tabs Demo******************************************************* -->
+
+
+
+
+
+<div class="col-md-6">
+<legend class="text-warning">Nested tabs demo</legend>
+      <div class="tabbable boxed parentTabs">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#set1">Tab 1</a>
+        </li>
+        <li><a href="#set2">Tab 2</a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade active in" id="set1">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub11">Tab 1.1</a>
+                    </li>
+                    <li><a href="#sub12">Tab 1.2</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="sub11">
+                        <p>Tab 1.1</p>
+                    </div>
+                    <div class="tab-pane fade" id="sub12">
+                        <p>Tab 1.2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="set2">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#sub21">Tab 2.1</a>
+                    </li>
+                    <li><a href="#sub22">Tab 2.2</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="sub21">
+                        <p>Tab 2.1</p>
+                    </div>
+                    <div class="tab-pane fade" id="sub22">
+                        <p>Tab 2.2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+$("ul.nav-tabs a").click(function (e) {
+  e.preventDefault();
+    $(this).tab('show');
+});
+
+</script>
+
+</div> <!-- /row -->
+      <!--****************************************** Rotating tabs Demo******************************************************* -->
+
+
+    <div class="col-md-6">
+        <legend class="text-warning">Rotating tabs demo</legend>
+        <div class="tabs-x tabs-left tab-sideways tab-bordered">
+            <ul id="myTab-kv-19" class="nav nav-tabs" role="tablist">
+                <li class="active"><a href="#home-kv-19" role="tab" data-toggle="tab"><i
+                        class="glyphicon glyphicon-home"></i> Home</a></li>
+                <li><a href="#profile-kv-19" role="tab-kv" data-toggle="tab"><i class="glyphicon glyphicon-user"></i>
+                    Profile</a></li>
+                <li class="dropdown">
+                    <a href="#" id="myTabDrop-kv-19" class="dropdown-toggle" data-toggle="dropdown"><i
+                            class="glyphicon glyphicon-list-alt"></i> Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop-1">
+                        <li><a href="#dropdown-kv-19-1" tabindex="-1" role="tab" data-toggle="tab"><i
+                                class="glyphicon glyphicon-chevron-right"></i> Option 1</a></li>
+                        <li><a href="#dropdown-kv-19-2" tabindex="-1" role="tab" data-toggle="tab"><i
+                                class="glyphicon glyphicon-chevron-right"></i> Option 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="myTabContent-kv-19" class="tab-content">
+                <div class="tab-pane fade in active" id="home-kv-19">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua,
+                        retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
+                        Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure
+                        terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan
+                        american apparel, butcher voluptate nisi qui.</p>
+                </div>
+                <div class="tab-pane fade" id="profile-kv-19">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.
+                        Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four
+                        loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk
+                        aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore
+                        aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente
+                        labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard
+                        ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher
+                        vero sint qui sapiente accusamus tattooed echo park.</p>
+                </div>
+                <div class="tab-pane fade" id="dropdown-kv-19-1">
+                    <p><h4>Dropdown &raquo; Option 1</h4>Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                    sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag
+                    gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie
+                    helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg
+                    banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog.
+                    Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork
+                    sustainable tofu synth chambray yr.</p>
+                </div>
+                <div class="tab-pane fade" id="dropdown-kv-19-2">
+                    <p><h4>Dropdown &raquo; Option 2</h4>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                    art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater.
+                    Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred
+                    vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby
+                    sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf
+                    salvia freegan, sartorial keffiyeh echo park vegan.</p>
+                </div>
+            </div>
+        </div>
+        <!-- /tabs-left -->
+    </div>
+    <!-- /col-md-6 -->
+
+        <!-- /tabs-right -->
+    </div>
+
+    <!-- /col-md-6 -->
+
+<!-- /row -->
+
+</body>
+</html>
